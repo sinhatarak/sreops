@@ -1,15 +1,57 @@
-site_name: SRE Ops Blog
+site_name: SREOPS
+site_description: SRE & Kubernetes Tech Blog
 site_url: https://sreops.co
+repo_url: https://github.com/sinhatarak/sreops
+repo_name: GitHub
+
 theme:
   name: material
+  palette:
+    primary: 'blue'
+    accent: 'deep-purple'
+    scheme: 'slate'  # Dark theme
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - content.code.annotate
+    - header.autohide
+    - toc.integrate
+  logo: images/logo.png
+  favicon: images/favicon.ico
+  highlightjs: true
 
 nav:
   - Home: index.md
+  - Kubernetes:
+      - Overview: k8s/overview.md
+      - Deployments: k8s/deployments.md
+      - Troubleshooting: k8s/troubleshooting.md
+  - SRE Practices:
+      - Monitoring: sre/monitoring.md
+      - Alerting: sre/alerting.md
+      - Disaster Recovery: sre/disaster-recovery.md
   - About: about.md
-  - Blog:
-      - Post1: blog/post1.md
-      - Post2: blog/post2.md
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.betterem:
+      smart_enable: all
 
 plugins:
   - search
+  - minify:
+      minify_html: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sinhatarak/sreops
 
