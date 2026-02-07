@@ -4,5 +4,5 @@
 
 Technical blog for **SRE, Kubernetes, and System Admin**.
 
-Built with **MkDocs + Material theme**.
+
 
