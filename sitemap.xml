@@ -5,11 +5,35 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://sreops.co/about/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/featured/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://sreops.co/k8s/deployments/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/k8s/overview/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/k8s/troubleshooting/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/sre/alerting/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/sre/disaster-recovery/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/sre/monitoring/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
 </urlset>
