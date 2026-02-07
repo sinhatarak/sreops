@@ -1,0 +1,15 @@
+site_name: SRE Ops Blog
+site_url: https://sreops.co
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Blog:
+      - Post1: blog/post1.md
+      - Post2: blog/post2.md
+
+plugins:
+  - search
+
