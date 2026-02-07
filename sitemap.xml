@@ -4,4 +4,12 @@
          <loc>https://sreops.co/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
+    <url>
+         <loc>https://sreops.co/k8s/deployments/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/k8s/overview/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
 </urlset>
