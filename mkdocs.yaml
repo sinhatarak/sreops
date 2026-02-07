@@ -4,12 +4,13 @@ site_url: https://sreops.co
 repo_url: https://github.com/sinhatarak/sreops
 repo_name: GitHub
 
+# Theme configuration
 theme:
   name: material
   palette:
-    primary: 'blue'
-    accent: 'deep-purple'
-    scheme: 'slate'    # dark theme
+    primary: blue
+    accent: deep-purple
+    # no dark theme
   logo: docs/images/logo.png
   favicon: docs/images/favicon.ico
   font:
@@ -22,22 +23,26 @@ theme:
     - header.autohide
     - toc.integrate
   highlightjs: true
+  copyright: "© 2026 SREOPS | Connect on GitHub & LinkedIn"
 
+# Navigation
 nav:
   - Home: index.md
   - Featured: featured.md
   - Kubernetes:
       - Overview: k8s/01-overview.md
-      - Overview (Alt): k8s/overview.md
       - Deployments: k8s/deployments.md
       - Services: k8s/services.md
       - Troubleshooting: k8s/troubleshooting.md
+      - ConfigMaps: k8s/04-configmaps.md
   - SRE Practices:
       - Monitoring: sre/monitoring.md
       - Alerting: sre/alerting.md
       - Disaster Recovery: sre/disaster-recovery.md
+  - References: references.md
   - About: about.md
 
+# Markdown extensions
 markdown_extensions:
   - admonition
   - codehilite:
@@ -50,13 +55,17 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
 
+# Plugins
 plugins:
   - search
   - minify:
       minify_html: true
 
+# Extra content (social links)
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sinhatarak/sreops
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/taraksinha/
 

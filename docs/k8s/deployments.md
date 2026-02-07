@@ -1,5 +1,5 @@
 # Kubernetes Deployments
-
+```bash
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,4 +17,4 @@ spec:
       containers:
       - name: nginx
         image: nginx:latest
-
+```
