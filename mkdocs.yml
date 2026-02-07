@@ -9,31 +9,28 @@ theme:
   palette:
     primary: 'blue'
     accent: 'deep-purple'
-    scheme: 'slate'
-  features:
-    - navigation.tabs
-    - content.code.annotate
-    - content.code.copy  
-  logo: docs/images/logo.png   
+    scheme: 'slate'    # dark theme
+  logo: docs/images/logo.png
   favicon: docs/images/favicon.ico
-
   font:
     text: Roboto
     code: Roboto Mono
   features:
     - navigation.tabs
     - content.code.annotate
+    - content.code.copy      # click-to-copy buttons for all code blocks
     - header.autohide
     - toc.integrate
-  logo: images/logo.png
-  favicon: images/favicon.ico
   highlightjs: true
 
 nav:
   - Home: index.md
+  - Featured: featured.md
   - Kubernetes:
-      - Overview: k8s/overview.md
+      - Overview: k8s/01-overview.md
+      - Overview (Alt): k8s/overview.md
       - Deployments: k8s/deployments.md
+      - Services: k8s/services.md
       - Troubleshooting: k8s/troubleshooting.md
   - SRE Practices:
       - Monitoring: sre/monitoring.md
@@ -57,6 +54,7 @@ plugins:
   - search
   - minify:
       minify_html: true
+
 extra:
   social:
     - icon: fontawesome/brands/github
