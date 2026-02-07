@@ -1,6 +1,6 @@
 ![SREOPS Logo](https://raw.githubusercontent.com/sinhatarak/sreops/main/docs/images/logo.png)
 
-# SREOPS Blog
+# SREOps Blog
 
 Technical blog for **SRE, Kubernetes, and System Admin**.
 
