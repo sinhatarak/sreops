@@ -10,15 +10,13 @@ theme:
     primary: 'blue'
     accent: 'deep-purple'
     scheme: 'slate'
-  logo: docs/images/logo.png   # Add this line
+  features:
+    - navigation.tabs
+    - content.code.annotate
+    - content.code.copy  
+  logo: docs/images/logo.png   
   favicon: docs/images/favicon.ico
 
-#theme:
-#  name: material
-#  palette:
-#    primary: 'blue'
-#    accent: 'deep-purple'
-#    scheme: 'slate'  # Dark theme
   font:
     text: Roboto
     code: Roboto Mono
