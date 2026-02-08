@@ -6,7 +6,7 @@ repo_name: GitHub
 
 theme:
   name: material
-  logo: images/sre.png
+  logo: images/logo.png
   favicon: images/favicon.ico
   custom_dir: overrides       # ← add this line
   palette:
