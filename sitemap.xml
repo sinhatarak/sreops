@@ -2,50 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sreops.co/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/about/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/featured/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/references/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/blog/posts/2026-02-07-kubernetes-networking/</loc>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/k8s/01-overview/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/k8s/04-configmaps/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/k8s/deployments/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/k8s/services/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/k8s/troubleshooting/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/sre/alerting/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/sre/disaster-recovery/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://sreops.co/sre/monitoring/</loc>
-         <lastmod>2026-02-07</lastmod>
+         <lastmod>2026-02-08</lastmod>
     </url>
 </urlset>
