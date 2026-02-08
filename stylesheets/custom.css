@@ -1,0 +1,16 @@
+/* Logo styling */
+.md-header-nav__title img {
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #004D40;
+}
+
+.md-header {
+    background-color: #00695C;
+}
+
+.md-header-nav__title img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
