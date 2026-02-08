@@ -24,24 +24,6 @@ theme:
     - toc.integrate
   highlightjs: true
 
-#theme:
-#  name: material
-#  palette:
-#    primary: 'teal'        # bright eye-catching header/nav
-#    accent: 'amber'        # accent color for buttons, highlights
-#  logo: docs/images/logo.png
-#  favicon: docs/images/favicon.ico
-#  font:
-#    text: Roboto
-#    code: Roboto Mono
-#  features:
-#    - navigation.tabs
-#    - navigation.expand          # toggleable subtopics
-#    - content.code.copy          # click-to-copy for code blocks
-#    - header.autohide
-#    - toc.integrate
-#  highlightjs: true
-
 nav:
   - Home: index.md
   - Kubernetes:
@@ -54,10 +36,11 @@ nav:
       - Monitoring: sre/monitoring.md
       - Alerting: sre/alerting.md
       - Disaster Recovery: sre/disaster-recovery.md
-  - System:
+  - System Administration:
       - Overview: system/overview.md
   - Blog:
-      - Blog Posts:\n        - 2026-02-07-kubernetes-networking: blog/posts/2026-02-07-kubernetes-networking.md
+    - Blog Posts:
+        - 2026-02-07-kubernetes-networking: blog/posts/2026-02-07-kubernetes-networking.md
   - References: references.md
   - About: about.md
 
@@ -69,7 +52,7 @@ markdown_extensions:
       permalink: true
   - pymdownx.superfences
   - pymdownx.tabbed
-  - pymdownx.highlight
+  - pymdownx.highlight: {}    # Leave empty, don't set 'style' here
   - pymdownx.betterem:
       smart_enable: all
 

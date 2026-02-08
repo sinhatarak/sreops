@@ -7,11 +7,47 @@
 }
 
 .md-header {
-    #background-color: #00695C;
-    background-color: #000000;  /* Changed header to black */
+    background-color: #000000;  /* Black header */
 }
 
 .md-header-nav__title img:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
+
+/* ---------- Dark mode for all code blocks ---------- */
+
+/* Inline code */
+.md-typeset code {
+    background-color: #2d2d2d !important;
+    color: #f8f8f2 !important;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Code blocks (pre) */
+.md-typeset pre {
+    background-color: #2d2d2d !important;
+    color: #f8f8f2 !important;
+    border-radius: 6px;
+    padding: 12px;
+    overflow-x: auto;
+    border: 1px solid #444;  /* subtle border for better separation */
+}
+
+/* Copy button styling */
+.md-typeset .md-clipboard {
+    background-color: #444 !important;  /* matches dark code block */
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    top: 8px;   /* position inside the code block nicely */
+}
+
+/* Copy button hover effect */
+.md-typeset .md-clipboard:hover {
+    background-color: #666 !important;
+    cursor: pointer;
+}
+
