@@ -4,31 +4,46 @@ site_url: https://sreops.co
 repo_url: https://github.com/sinhatarak/sreops
 repo_name: GitHub
 
-# Theme configuration
 theme:
   name: material
+  logo: images/sre.png
+  favicon: images/favicon.ico
+  custom_dir: overrides       # ← add this line
   palette:
-    primary: blue
-    accent: deep-purple
-    # no dark theme
-  logo: docs/images/logo.png
-  favicon: docs/images/favicon.ico
+    primary: 'teal'          # or your chosen color
+    accent: 'orange'
   font:
     text: Roboto
     code: Roboto Mono
   features:
     - navigation.tabs
+    - navigation.expand          # toggleable subtopics
+    - content.code.copy          # click-to-copy for code blocks
     - content.code.annotate
-    - content.code.copy      # click-to-copy buttons for all code blocks
     - header.autohide
     - toc.integrate
   highlightjs: true
-  copyright: "© 2026 SREOPS | Connect on GitHub & LinkedIn"
 
-# Navigation
+#theme:
+#  name: material
+#  palette:
+#    primary: 'teal'        # bright eye-catching header/nav
+#    accent: 'amber'        # accent color for buttons, highlights
+#  logo: docs/images/logo.png
+#  favicon: docs/images/favicon.ico
+#  font:
+#    text: Roboto
+#    code: Roboto Mono
+#  features:
+#    - navigation.tabs
+#    - navigation.expand          # toggleable subtopics
+#    - content.code.copy          # click-to-copy for code blocks
+#    - header.autohide
+#    - toc.integrate
+#  highlightjs: true
+
 nav:
   - Home: index.md
-  - Featured: featured.md
   - Kubernetes:
       - Overview: k8s/01-overview.md
       - Deployments: k8s/deployments.md
@@ -39,10 +54,13 @@ nav:
       - Monitoring: sre/monitoring.md
       - Alerting: sre/alerting.md
       - Disaster Recovery: sre/disaster-recovery.md
+  - System:
+      - Overview: system/overview.md
+  - Blog:
+      - Blog Posts:\n        - 2026-02-07-kubernetes-networking: blog/posts/2026-02-07-kubernetes-networking.md
   - References: references.md
   - About: about.md
 
-# Markdown extensions
 markdown_extensions:
   - admonition
   - codehilite:
@@ -55,17 +73,17 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
 
-# Plugins
 plugins:
   - search
   - minify:
       minify_html: true
 
-# Extra content (social links)
+extra_css:
+  - stylesheets/custom.css
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sinhatarak/sreops
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/taraksinha/
-
