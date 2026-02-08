@@ -9,10 +9,6 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
-         <loc>https://sreops.co/featured/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
          <loc>https://sreops.co/references/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
@@ -50,6 +46,10 @@
     </url>
     <url>
          <loc>https://sreops.co/sre/monitoring/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://sreops.co/system/overview/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
 </urlset>
