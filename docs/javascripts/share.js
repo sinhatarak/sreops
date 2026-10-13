@@ -78,6 +78,27 @@
         height: 17px;
         flex: 0 0 17px;
       }
+
+      /* Social platform brand colors */
+      .sreops-share__buttons a[data-share="linkedin"] svg {
+        color: #0A66C2;
+      }
+      .sreops-share__buttons a[data-share="x"] svg {
+        color: #000000;
+      }
+      .sreops-share__buttons a[data-share="reddit"] svg {
+        color: #FF4500;
+      }
+      .sreops-share__buttons a[data-share="whatsapp"] svg {
+        color: #25D366;
+      }
+      .sreops-share__buttons a[data-share="telegram"] svg {
+        color: #26A5E4;
+      }
+      .sreops-share__buttons button[data-share="copy"] svg,
+      .sreops-share__buttons button[data-share="native"] svg {
+        color: var(--md-default-fg-color--light, #666666);
+      }
       .sreops-share__status {
         min-height: 1em;
         margin-top: 8px;
