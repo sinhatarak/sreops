@@ -35,8 +35,7 @@ Red Hat certified since 2012, with hands-on exams across Linux administration, v
 
 TODO-AWS-CERTIFICATION-NAMES: list each AWS certification you hold with the year earned, for example "AWS Certified Solutions Architect – Associate (2023)".
 
-[Verify my AWS certification](#TODO-AWS-VERIFY-URL){ .md-button }
-
+[Verify AWS Certification](https://www.credly.com/badges/b4e21243-7cdc-4a31-a271-4aa5a22ee342/public_url){ .md-button }
 ## Where this fits
 
 The [certification roadmaps](../roadmaps/overview.md) cover the paths I recommend for CNCF, AWS, Google Cloud, Azure and security.
