@@ -17,7 +17,7 @@ All five CNCF Kubernetes certifications:
 [My CNCF profile](https://www.cncf.io/training/kubestronaut/?p=tarak-nath-sinha&_sf_s=tarak+nath+sinha){ .md-button target=_blank rel="noopener" }
 [What Kubestronaut means](../kubestronaut.md){ .md-button }
 
-## Red Hat Certified Architect (RHCA) in Infrastrcuture 
+## Red Hat Certified Architect (RHCA) in Infrastructure 
 
 Red Hat certified since 2012, with hands-on exams across Linux administration, virtualization, storage, security and OpenStack. This is my exam history from Red Hat's certification records.
 
