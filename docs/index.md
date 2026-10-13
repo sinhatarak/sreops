@@ -136,35 +136,109 @@ Kubernetes audits, SLO and alerting setup, and disaster recovery planning.
 
 </div>
 
+
 ## Live visitor activity
 
-<div style="max-width: 320px; width: 100%; margin: 1rem auto;">
+<div class="visitor-feed">
+  <div class="visitor-feed__header">
+    <div>
+      <strong>LIVE TRAFFIC</strong>
+      <div class="visitor-feed__subtitle">Recent website visitors</div>
+    </div>
+    <button id="visitor-feed-refresh" type="button">
+      ↻ Refresh
+    </button>
+  </div>
 
-<script src="https://feed-pulse.com/api/embed/traffic-feed.js?site_id=102f4d90-8dec-4327-a2ee-b1ca2be5d8d2&w=320&bc=ffffff&tc=0A0A0A&brd=E5E7EB&hb=002FA7&hf=ffffff&lnk=002FA7&font=IBM+Plex+Sans&rows=10&poll=3000&lang=en&bstyle=minimal&v=15" async></script>
-
+  <div class="visitor-feed__widget">
+    <script src="https://feed-pulse.com/api/embed/traffic-feed.js?site_id=102f4d90-8dec-4327-a2ee-b1ca2be5d8d2&w=320&bc=111827&tc=F3F4F6&brd=374151&hb=002FA7&hf=ffffff&lnk=60A5FA&font=IBM+Plex+Sans&rows=10&poll=3000&lang=en&bstyle=minimal&v=15" async></script>
+  </div>
+  <div class="visitor-feed__footer">Auto-refresh enabled · 3-second polling</div>
 </div>
 
+<style>
+.visitor-feed {
+  max-width: 360px;
+  padding: 16px;
+  margin: 1rem 0;
+  color: #f3f4f6;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.visitor-feed__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.visitor-feed__subtitle,
+.visitor-feed__footer {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-top: 4px;
+}
+#visitor-feed-refresh {
+  padding: 7px 10px;
+  color: #fff;
+  background: #002fa7;
+  border: 1px solid #4268c5;
+  border-radius: 7px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+#visitor-feed-refresh:hover {
+  background: #1746bd;
+}
+.visitor-feed__widget {
+  min-height: 100px;
+  overflow: hidden;
+}
+.visitor-feed__footer {
+  border-top: 1px solid #374151;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+</style>
+
 <script>
-(function(){
-  function g(){
-    try {
-      var i = new Image();
-      var t = (document.title || '').slice(0,160);
-      i.src = 'https://feed-pulse.com/api/track-pixel/102f4d90-8dec-4327-a2ee-b1ca2be5d8d2?path='
-        + encodeURIComponent(location.pathname || '/')
-        + '&title=' + encodeURIComponent(t)
-        + '&host=' + encodeURIComponent(location.host)
-        + '&ref=' + encodeURIComponent(document.referrer || '');
-    } catch(e) {}
-  }
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded',g,{once:true});
-  } else {
-    setTimeout(g,80);
-  }
+(function () {
+  var button = document.getElementById('visitor-feed-refresh');
+  if (!button) return;
+
+  button.addEventListener('click', function () {
+    button.disabled = true;
+    button.textContent = 'Refreshing…';
+
+    var oldScript = document.querySelector(
+      '.visitor-feed__widget script[src*="traffic-feed.js"]'
+    );
+
+    if (oldScript) {
+      var src = oldScript.src;
+      var widget = oldScript.parentNode;
+      widget.innerHTML = '';
+
+      var newScript = document.createElement('script');
+      newScript.src = src;
+      newScript.async = true;
+      newScript.onload = function () {
+        button.disabled = false;
+        button.textContent = '↻ Refresh';
+      };
+      newScript.onerror = function () {
+        button.disabled = false;
+        button.textContent = 'Retry refresh';
+      };
+      widget.appendChild(newScript);
+    } else {
+      button.disabled = false;
+      button.textContent = '↻ Refresh';
+    }
+  });
 })();
 </script>
 
-<noscript>
-<img src="https://feed-pulse.com/api/track-pixel/102f4d90-8dec-4327-a2ee-b1ca2be5d8d2?via=img&nojs=1" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;width:1px;height:1px;border:0;opacity:0;pointer-events:none;" alt="">
-</noscript>
