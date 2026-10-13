@@ -3,6 +3,10 @@ site_description: SRE, Kubernetes & Cloud engineering blog and consulting
 site_url: https://sreops.co
 repo_url: https://github.com/sinhatarak/sreops
 repo_name: GitHub
+
+extra_javascript:
+  - javascripts/share.js
+
 exclude_docs: |
   *.orig*
   *.bak
