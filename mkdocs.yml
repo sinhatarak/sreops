@@ -43,10 +43,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Certifications:
-      - Highlights:
-          - My Credentials: certifications/credentials.md
-          - CNCF Kubestronaut: kubestronaut.md
+
   - Kubernetes:
       - Fundamentals:
           - Overview: k8s/01-overview.md
@@ -61,7 +58,15 @@ nav:
       - Resources & Storage:
           - Requests, Limits & QoS: k8s/resources.md
           - Volumes & PVCs: k8s/storage.md
-  - K8s Networking:
+      - Troubleshooting:
+          - Start Here: troubleshooting/overview.md
+          - Quick Reference: k8s/troubleshooting.md
+          - Pod Failures: troubleshooting/pods.md
+          - Nodes: troubleshooting/nodes.md
+          - Services & DNS: troubleshooting/networking.md
+          - Volumes: troubleshooting/storage.md
+
+  - Networking:
       - Foundations:
           - Overview: networking/overview.md
           - Pod Networking & CNI: networking/cni.md
@@ -72,17 +77,7 @@ nav:
           - Gateway API & Ingress: networking/ingress-gateway.md
       - Network Security:
           - Network Policies: networking/network-policies.md
-  - Troubleshooting:
-      - Method:
-          - Start Here: troubleshooting/overview.md
-          - Quick Reference: k8s/troubleshooting.md
-      - Workloads:
-          - Pod Failures: troubleshooting/pods.md
-          - Nodes: troubleshooting/nodes.md
-      - Networking:
-          - Services & DNS: troubleshooting/networking.md
-      - Storage:
-          - Volumes: troubleshooting/storage.md
+
   - SRE:
       - Foundations:
           - What is SRE?: sre/introduction.md
@@ -100,49 +95,51 @@ nav:
       - Operations:
           - Toil & Automation: sre/toil-automation.md
           - Release Engineering: sre/release-engineering.md
-  - Linux:
-      - Foundations:
+
+  - Systems & Platform:
+      - Linux:
           - Overview: system/overview.md
           - Users & Permissions: system/users-permissions.md
-      - Storage:
           - Disks & LVM: system/storage-lvm.md
-      - Services & Boot:
           - systemd: system/systemd.md
           - Boot & Recovery: system/boot-recovery.md
-      - Networking:
           - Networking & Firewalls: system/networking.md
-      - Performance:
           - Performance Troubleshooting: system/performance.md
-      - Security & Automation:
           - SELinux & Hardening: system/selinux-hardening.md
           - Shell & Ansible: system/automation.md
-  - Platform:
-      - Overview: platform/overview.md
-      - GitOps: platform/gitops.md
-  - Security:
-      - Overview: security/overview.md
-      - Cluster Hardening: security/hardening.md
-  - Programming:
-      - Overview: programming/overview.md
-      - Python: programming/python.md
-      - Go: programming/go.md
-  - Cert Roadmap:
-      - Start Here:
-          - How to Choose: roadmaps/overview.md
-      - CNCF:
+      - Platform Engineering:
+          - Overview: platform/overview.md
+          - GitOps: platform/gitops.md
+      - Security:
+          - Overview: security/overview.md
+          - Cluster Hardening: security/hardening.md
+      - Programming:
+          - Overview: programming/overview.md
+          - Python: programming/python.md
+          - Go: programming/go.md
+
+  - Tools & Open Source:
+      - Overview: tools/index.md
+
+  - Learning:
+      - Certifications:
+          - My Credentials: certifications/credentials.md
+          - CNCF Kubestronaut: kubestronaut.md
+      - Certification Roadmaps:
+          - Overview: roadmaps/overview.md
           - Kubestronaut Path: roadmaps/kubestronaut.md
           - Golden Kubestronaut: roadmaps/golden-kubestronaut.md
-      - Cloud Providers:
           - AWS: roadmaps/aws.md
           - Google Cloud: roadmaps/gcp.md
           - Azure: roadmaps/azure.md
-      - Security:
           - Security Certifications: roadmaps/security.md
-  - Blog: blog/index.md
+  - Blog:
+      - Articles & Topics: blog/index.md
+      - References: references.md
+
   - About:
       - About Me: about.md
       - Work With Me: services.md
-      - References: references.md
 
 plugins:
   - search

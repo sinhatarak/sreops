@@ -131,3 +131,52 @@
   .t-line { width: auto; animation: none; } .t-out, .t-cursor { opacity: 1; animation: none; }
   .rotator span, .hero.hero-split { animation: none; }
 }
+
+/* SREOPS sidebar profile */
+.sreops-profile {
+  margin: 0.75rem 0.65rem 1rem;
+  padding: 1rem 0.7rem;
+  text-align: center;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.sreops-profile__photo {
+  display: block;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 0.7rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--md-primary-fg-color);
+}
+
+.sreops-profile__name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.sreops-profile__role {
+  margin-top: 0.15rem;
+  color: var(--md-primary-fg-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.sreops-profile__summary {
+  margin: 0.65rem 0;
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.sreops-profile__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.sreops-profile__links a {
+  font-size: 0.68rem;
+  font-weight: 600;
+}
