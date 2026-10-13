@@ -135,3 +135,36 @@ Kubernetes audits, SLO and alerting setup, and disaster recovery planning.
 [Read the blog](blog/index.md){ .md-button }
 
 </div>
+
+## Live visitor activity
+
+<div style="max-width: 320px; width: 100%; margin: 1rem auto;">
+
+<script src="https://feed-pulse.com/api/embed/traffic-feed.js?site_id=102f4d90-8dec-4327-a2ee-b1ca2be5d8d2&w=320&bc=ffffff&tc=0A0A0A&brd=E5E7EB&hb=002FA7&hf=ffffff&lnk=002FA7&font=IBM+Plex+Sans&rows=10&poll=3000&lang=en&bstyle=minimal&v=15" async></script>
+
+</div>
+
+<script>
+(function(){
+  function g(){
+    try {
+      var i = new Image();
+      var t = (document.title || '').slice(0,160);
+      i.src = 'https://feed-pulse.com/api/track-pixel/102f4d90-8dec-4327-a2ee-b1ca2be5d8d2?path='
+        + encodeURIComponent(location.pathname || '/')
+        + '&title=' + encodeURIComponent(t)
+        + '&host=' + encodeURIComponent(location.host)
+        + '&ref=' + encodeURIComponent(document.referrer || '');
+    } catch(e) {}
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded',g,{once:true});
+  } else {
+    setTimeout(g,80);
+  }
+})();
+</script>
+
+<noscript>
+<img src="https://feed-pulse.com/api/track-pixel/102f4d90-8dec-4327-a2ee-b1ca2be5d8d2?via=img&nojs=1" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;width:1px;height:1px;border:0;opacity:0;pointer-events:none;" alt="">
+</noscript>
