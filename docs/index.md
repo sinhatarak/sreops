@@ -15,7 +15,7 @@ hide:
 CNCF Kubestronaut sharing real production lessons, troubleshooting playbooks and automation.
 { .hero-sub }
 
-[Work with me](services.md){ .md-button .md-button--primary }
+[Learn with me](services.md){ .md-button .md-button--primary }
 [Troubleshooting guides](troubleshooting/overview.md){ .md-button }
 
 </div>
@@ -131,7 +131,7 @@ All five Kubernetes certifications: CKA · CKAD · CKS · KCNA · KCSA
 
 Kubernetes audits, SLO and alerting setup, and disaster recovery planning.
 
-[Work with me](services.md){ .md-button .md-button--primary }
+[Learn with me](services.md){ .md-button .md-button--primary }
 [Read the blog](blog/index.md){ .md-button }
 
 </div>
