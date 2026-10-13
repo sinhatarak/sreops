@@ -1,52 +1,7 @@
-site_name: SREOPS
-site_description: SRE, Kubernetes & Cloud engineering blog and consulting
-site_url: https://sreops.co
-repo_url: https://github.com/sinhatarak/sreops
-repo_name: GitHub
-exclude_docs: |
-  *.orig*
-  *.bak
-
-theme:
-  name: material
-  custom_dir: overrides
-  logo: images/logo.png
-  favicon: images/favicon.ico
-  icon:
-    repo: fontawesome/brands/github
-  font: false              # use system fonts: faster, no Google request
-  palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
-      accent: orange
-      toggle: { icon: material/weather-sunny, name: Light mode }
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: orange
-      toggle: { icon: material/weather-night, name: Dark mode }
-  features:
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - navigation.footer
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - content.code.annotate
-    - content.tabs.link
-    - toc.follow
 
 nav:
   - Home: index.md
-  - Certifications:
-      - Highlights:
-          - My Credentials: certifications/credentials.md
-          - CNCF Kubestronaut: kubestronaut.md
+
   - Kubernetes:
       - Fundamentals:
           - Overview: k8s/01-overview.md
@@ -61,7 +16,15 @@ nav:
       - Resources & Storage:
           - Requests, Limits & QoS: k8s/resources.md
           - Volumes & PVCs: k8s/storage.md
-  - K8s Networking:
+      - Troubleshooting:
+          - Start Here: troubleshooting/overview.md
+          - Quick Reference: k8s/troubleshooting.md
+          - Pod Failures: troubleshooting/pods.md
+          - Nodes: troubleshooting/nodes.md
+          - Services & DNS: troubleshooting/networking.md
+          - Volumes: troubleshooting/storage.md
+
+  - Networking:
       - Foundations:
           - Overview: networking/overview.md
           - Pod Networking & CNI: networking/cni.md
@@ -72,17 +35,7 @@ nav:
           - Gateway API & Ingress: networking/ingress-gateway.md
       - Network Security:
           - Network Policies: networking/network-policies.md
-  - Troubleshooting:
-      - Method:
-          - Start Here: troubleshooting/overview.md
-          - Quick Reference: k8s/troubleshooting.md
-      - Workloads:
-          - Pod Failures: troubleshooting/pods.md
-          - Nodes: troubleshooting/nodes.md
-      - Networking:
-          - Services & DNS: troubleshooting/networking.md
-      - Storage:
-          - Volumes: troubleshooting/storage.md
+
   - SRE:
       - Foundations:
           - What is SRE?: sre/introduction.md
@@ -100,98 +53,49 @@ nav:
       - Operations:
           - Toil & Automation: sre/toil-automation.md
           - Release Engineering: sre/release-engineering.md
-  - Linux:
-      - Foundations:
+
+  - Systems & Platform:
+      - Linux:
           - Overview: system/overview.md
           - Users & Permissions: system/users-permissions.md
-      - Storage:
           - Disks & LVM: system/storage-lvm.md
-      - Services & Boot:
           - systemd: system/systemd.md
           - Boot & Recovery: system/boot-recovery.md
-      - Networking:
           - Networking & Firewalls: system/networking.md
-      - Performance:
           - Performance Troubleshooting: system/performance.md
-      - Security & Automation:
           - SELinux & Hardening: system/selinux-hardening.md
           - Shell & Ansible: system/automation.md
-  - Platform:
-      - Overview: platform/overview.md
-      - GitOps: platform/gitops.md
-  - Security:
-      - Overview: security/overview.md
-      - Cluster Hardening: security/hardening.md
-  - Programming:
-      - Overview: programming/overview.md
-      - Python: programming/python.md
-      - Go: programming/go.md
-  - Cert Roadmap:
-      - Start Here:
-          - How to Choose: roadmaps/overview.md
-      - CNCF:
+      - Platform Engineering:
+          - Overview: platform/overview.md
+          - GitOps: platform/gitops.md
+      - Security:
+          - Overview: security/overview.md
+          - Cluster Hardening: security/hardening.md
+      - Programming:
+          - Overview: programming/overview.md
+          - Python: programming/python.md
+          - Go: programming/go.md
+
+  - Tools & Open Source:
+      - Overview: tools/index.md
+
+  - Learning:
+      - Certifications:
+          - My Credentials: certifications/credentials.md
+          - CNCF Kubestronaut: kubestronaut.md
+      - Certification Roadmaps:
+          - Overview: roadmaps/overview.md
           - Kubestronaut Path: roadmaps/kubestronaut.md
           - Golden Kubestronaut: roadmaps/golden-kubestronaut.md
-      - Cloud Providers:
           - AWS: roadmaps/aws.md
           - Google Cloud: roadmaps/gcp.md
           - Azure: roadmaps/azure.md
-      - Security:
           - Security Certifications: roadmaps/security.md
+
   - Blog: blog/index.md
+
   - About:
       - About Me: about.md
       - Work With Me: services.md
       - References: references.md
 
-plugins:
-  - search
-  - blog:
-      blog_dir: blog
-      post_date_format: long
-      post_excerpt: optional
-      categories_name: Topics
-      categories_allowed:
-        - Kubernetes
-        - SRE
-        - Platform Engineering
-        - Security
-        - Python
-        - Go
-        - Linux
-        - Kubestronaut
-      pagination_per_page: 8
-  - tags
-  - minify:
-      minify_html: true
-
-markdown_extensions:
-  - admonition
-  - attr_list
-  - md_in_html
-  - tables
-  - toc: { permalink: true }
-  - pymdownx.highlight: { anchor_linenums: true }
-  - pymdownx.inlinehilite
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid            # architecture diagrams
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed: { alternate_style: true }
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.betterem: { smart_enable: all }
-
-extra_css:
-  - stylesheets/custom.css
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/sinhatarak/sreops
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/taraksinha/
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/@sreops
