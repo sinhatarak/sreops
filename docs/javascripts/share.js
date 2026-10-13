@@ -139,7 +139,9 @@
     if (!article || article.querySelector(".sreops-share")) return;
 
     const heading = article.querySelector("h1");
-    const title = heading ? heading.textContent.trim() : document.title;
+    const title = heading
+      ? heading.cloneNode(true).textContent.replace(/¶/g, "").trim()
+      : document.title.replace(/¶/g, "").trim();
     const url = window.location.href.split("#")[0];
 
     const share = document.createElement("section");
