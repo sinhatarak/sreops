@@ -1,6 +1,6 @@
 # About SREOPS
 
-SREOPS is a personal blog focused on **SRE, Kubernetes, and System Administration**.  
+SREOPS is a personal blog focused on **SRE, Kubernetes, and System Administration**.
 
 We cover:
 - Monitoring & alerting strategies
@@ -9,4 +9,3 @@ We cover:
 - Automation scripts & best practices
 
 Maintained by **Tarak Nath Sinha**.
-

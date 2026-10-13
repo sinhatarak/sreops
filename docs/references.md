@@ -11,4 +11,3 @@ A curated list of references for Kubernetes networking and SRE concepts:
 - **VXLAN:** [RFC 7348](https://datatracker.ietf.org/doc/html/rfc7348)
 - **IPIP:** [RFC 2003](https://datatracker.ietf.org/doc/html/rfc2003)
 - **BGP:** [RFC 4271](https://datatracker.ietf.org/doc/html/rfc4271)
-

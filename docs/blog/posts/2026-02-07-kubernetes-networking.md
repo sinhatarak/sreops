@@ -1,14 +1,18 @@
 ---
-title: Kubernetes Networking Deep Dive
 date: 2026-02-07
 authors:
-  - Tarak Sinha
-tags: [kubernetes, networking, CNI, SRE]
+  - tarak
+categories:
+  - Kubernetes
+tags:
+  - networking
 ---
 
 # Kubernetes Networking Deep Dive
 
 Kubernetes networking is critical for SREs and system administrators. Pods must communicate with each other and with services, often across nodes.
+
+<!-- more -->
 
 ---
 
@@ -45,4 +49,3 @@ kubectl get pods
 - [CNI Spec](https://github.com/containernetworking/cni)
 - [Cilium](https://github.com/cilium/cilium)
 - [Calico](https://github.com/projectcalico/calico/)
-

@@ -3,6 +3,3 @@
 # SREOps Blog
 
 Technical blog for **SRE, Kubernetes, and System Admin**.
-
-
-
