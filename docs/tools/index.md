@@ -33,5 +33,3 @@ secure, and troubleshoot reliable infrastructure.
 Each guide will cover what the tool does, common use cases,
 installation, practical examples, troubleshooting, and production
 considerations.
-
-

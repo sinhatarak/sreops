@@ -23,4 +23,3 @@ I help teams run Kubernetes and cloud infrastructure reliably.
 For consulting, platform architecture, SRE, or engineering discussions, connect with me on LinkedIn.
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/taraksinha/){ .md-button }
-
