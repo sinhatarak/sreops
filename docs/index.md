@@ -52,6 +52,30 @@ All five Kubernetes certifications: CKA · CKAD · CKS · KCNA · KCSA
 </div>
 </div>
 
+## Start here
+
+<div class="grid cards" markdown>
+
+- :material-restart-alert: **Debug a CrashLoopBackOff**
+
+    A repeatable method for pods that keep restarting.
+
+    [:octicons-arrow-right-24: Read](troubleshooting/pods.md#crashloopbackoff)
+
+- :material-lan: **How Services and DNS really work**
+
+    From Pod IPs to Gateway API.
+
+    [:octicons-arrow-right-24: Read](networking/overview.md)
+
+- :material-shield-lock: **Harden a cluster**
+
+    A practical production baseline.
+
+    [:octicons-arrow-right-24: Read](security/hardening.md)
+
+</div>
+
 ## Fix it fast
 
 <div class="chips" markdown>
@@ -135,110 +159,3 @@ Kubernetes audits, SLO and alerting setup, and disaster recovery planning.
 [Read the blog](blog/index.md){ .md-button }
 
 </div>
-
-
-## Live visitor activity
-
-<div class="visitor-feed">
-  <div class="visitor-feed__header">
-    <div>
-      <strong>LIVE TRAFFIC</strong>
-      <div class="visitor-feed__subtitle">Recent website visitors</div>
-    </div>
-    <button id="visitor-feed-refresh" type="button">
-      ↻ Refresh
-    </button>
-  </div>
-
-  <div class="visitor-feed__widget">
-    <script src="https://feed-pulse.com/api/embed/traffic-feed.js?site_id=102f4d90-8dec-4327-a2ee-b1ca2be5d8d2&w=320&bc=111827&tc=F3F4F6&brd=374151&hb=002FA7&hf=ffffff&lnk=60A5FA&font=IBM+Plex+Sans&rows=10&poll=3000&lang=en&bstyle=minimal&v=15" async></script>
-  </div>
-  <div class="visitor-feed__footer">Auto-refresh enabled · 3-second polling</div>
-</div>
-
-<style>
-.visitor-feed {
-  max-width: 360px;
-  padding: 16px;
-  margin: 1rem 0;
-  color: #f3f4f6;
-  background: #111827;
-  border: 1px solid #374151;
-  border-radius: 12px;
-  font-family: "IBM Plex Sans", sans-serif;
-}
-.visitor-feed__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-}
-.visitor-feed__subtitle,
-.visitor-feed__footer {
-  color: #9ca3af;
-  font-size: 12px;
-  margin-top: 4px;
-}
-#visitor-feed-refresh {
-  padding: 7px 10px;
-  color: #fff;
-  background: #002fa7;
-  border: 1px solid #4268c5;
-  border-radius: 7px;
-  cursor: pointer;
-  font: inherit;
-  font-size: 13px;
-}
-#visitor-feed-refresh:hover {
-  background: #1746bd;
-}
-.visitor-feed__widget {
-  min-height: 100px;
-  overflow: hidden;
-}
-.visitor-feed__footer {
-  border-top: 1px solid #374151;
-  padding-top: 10px;
-  margin-top: 10px;
-}
-</style>
-
-<script>
-(function () {
-  var button = document.getElementById('visitor-feed-refresh');
-  if (!button) return;
-
-  button.addEventListener('click', function () {
-    button.disabled = true;
-    button.textContent = 'Refreshing…';
-
-    var oldScript = document.querySelector(
-      '.visitor-feed__widget script[src*="traffic-feed.js"]'
-    );
-
-    if (oldScript) {
-      var src = oldScript.src;
-      var widget = oldScript.parentNode;
-      widget.innerHTML = '';
-
-      var newScript = document.createElement('script');
-      newScript.src = src;
-      newScript.async = true;
-      newScript.onload = function () {
-        button.disabled = false;
-        button.textContent = '↻ Refresh';
-      };
-      newScript.onerror = function () {
-        button.disabled = false;
-        button.textContent = 'Retry refresh';
-      };
-      widget.appendChild(newScript);
-    } else {
-      button.disabled = false;
-      button.textContent = '↻ Refresh';
-    }
-  });
-})();
-</script>
-
