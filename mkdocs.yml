@@ -74,6 +74,7 @@ nav:
       - Foundations:
           - Overview: networking/overview.md
           - Pod Networking & CNI: networking/cni.md
+          - Kubernetes Networking Deep Dive: networking/kubernetes-networking-deep-dive.md
       - Service Discovery:
           - Services: k8s/services.md
           - DNS (CoreDNS): networking/dns.md
@@ -81,6 +82,8 @@ nav:
           - Gateway API & Ingress: networking/ingress-gateway.md
       - Network Security:
           - Network Policies: networking/network-policies.md
+          - Network Policy Troubleshooting: networking/network-policy-troubleshooting.md
+
 
   - SRE:
       - Foundations:
