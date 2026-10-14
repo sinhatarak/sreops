@@ -8,11 +8,11 @@ hide:
 
 <div class="hero-copy" markdown>
 
-# Reliable infrastructure, **engineered.**
+# Engineering Reliable **Platforms at Scale.**
 
 <p class="hero-roles">Hands-on <span class="rotator"><span>Kubernetes</span><span>SRE</span><span>Platform Engineering</span><span>Cloud Security</span><span>Python &amp; Go</span><span>Kubernetes</span></span></p>
 
-CNCF Kubestronaut sharing real production lessons, troubleshooting playbooks and automation.
+Platform architecture, Kubernetes, cloud-native infrastructure, networking, security, and SRE practices for building scalable, resilient production systems.
 { .hero-sub }
 
 [Learn with me](services.md){ .md-button .md-button--primary }
