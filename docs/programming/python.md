@@ -2,9 +2,7 @@
 
 Python is the fastest route from idea to working automation. With the official Kubernetes client you can query a cluster in a few lines.
 
-
-Here is the step-by-step procedure to execute the snippet from **SREOPS** safely and correctly on your Ubuntu control plane node (`master-1`), adhering strictly to the safety habits highlighted in your guide (Virtual Environments, Error Handling, and Read-Only/Safe Execution).
-
+## How to check unhealthy pods on K8 cluster
 ---
 
 ### Step 1: Install Virtual Environment Prerequisites
