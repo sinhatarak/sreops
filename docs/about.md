@@ -1,6 +1,6 @@
 # About
 
-I'm **Tarak Nath Sinha**, a Site Reliability Engineer and **CNCF Kubestronaut**. I help teams run Kubernetes in production without the 3 a.m. surprises.
+I'm **Tarak Nath Sinha**, an **Infrastructure & Platform Architect and SRE Engineering Leader** with **16+ years of experience** designing, scaling, and operating highly available infrastructure, Kubernetes platforms, distributed systems, and security-critical services. I'm a **CNCF Kubestronaut** holding all five Kubernetes certifications (CKA, CKAD, CKS, KCNA, and KCSA), and a **Red Hat Certified Architect (RHCA)**.
 
 SREOPS is where I write down what I learn from keeping real systems healthy: how clusters behave under pressure, why alerts fire, and how to recover quickly when something breaks. Everything here comes from hands-on work, not slideware.
 
@@ -13,7 +13,9 @@ SREOPS is where I write down what I learn from keeping real systems healthy: how
 
 ## Background
 
-TODO-ONE-OR-TWO-SENTENCES: your years of experience, the kinds of environments you have worked in, and your current role or whether you consult independently.
+With **16 years of experience** in infrastructure engineering, Site Reliability Engineering, and platform operations, I've worked across enterprise technology environments, cloud-native platforms, and large-scale production systems. My experience spans Kubernetes, Linux, automation, networking, observability, disaster recovery, and security-focused infrastructure.
+
+I currently lead SRE engineering teams, focusing on platform reliability, operational excellence, and engineering practices for critical production services.
 
 ## Why Kubestronaut
 

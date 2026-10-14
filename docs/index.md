@@ -52,7 +52,26 @@ All five Kubernetes certifications: CKA · CKAD · CKS · KCNA · KCSA
 </div>
 </div>
 
-## Start here
+
+<div class="grid cards" markdown>
+
+- :material-layers-triple: **Platform Architecture**
+
+    Designing scalable platforms, reliable infrastructure, and repeatable engineering patterns.
+
+- :material-chart-line: **Site Reliability Engineering**
+
+    SLOs, observability, incident response, disaster recovery, and operational excellence.
+
+- :material-kubernetes: **Cloud-Native Engineering**
+
+    Kubernetes, service networking, GitOps, and platform engineering practices.
+
+- :material-shield-lock: **Infrastructure Security**
+
+    Linux hardening, identity systems, security controls, and compliance-focused operations.
+
+</div>
 
 <div class="grid cards" markdown>
 

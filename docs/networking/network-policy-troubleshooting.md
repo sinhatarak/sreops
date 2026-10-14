@@ -14,7 +14,7 @@ Kubernetes NetworkPolicies help control communication between workloads. However
 
 In this guide, we will work through a practical troubleshooting workflow for pod-to-pod communication, examine common policy mistakes, and explore how Cilium can help diagnose network issues.
 
-![Kubernetes network policy and secured pod communication](../assets/kubernetes-network-policies.png)
+![Kubernetes network policy and secured pod communication](../blog/assets/kubernetes-network-policies.jpg)
 
 ## 1. Understand the traffic flow
 

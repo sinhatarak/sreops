@@ -37,6 +37,6 @@ Kubernetes networking looks complicated because several layers cooperate. Each l
 
 ## Go deeper
 
-For a longer walkthrough, read the article [Kubernetes Networking Deep Dive](../blog/posts/2026-02-07-kubernetes-networking.md).
+For a longer walkthrough, read the article [Kubernetes Networking Deep Dive](kubernetes-networking-deep-dive.md).
 
 When something is broken, go straight to [Services and DNS troubleshooting](../troubleshooting/networking.md).
